@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+    --black: #1b1b1b;
+    --white: rgb(255, 255, 255);
+    --gris: #c7c7c7;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+/* regular 400, medium 500, semiblod 600*/
+body {
+    font-size: 1.2rem;
+    background-color: var(--black);
+    color: var(--gris);
+}
+.inactive {
+    display: none;
+}
+/* aqui empiezan los estilos del header */
+header {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+header a {
+    width: 50vw;
+}
+.icon-container img {
+    width: 2.5rem;
+    
+}
+.ul-header {
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+.ul-header li {
+    margin-left: 1rem;
+}
+.ul-header li a {
+    text-decoration: none;
+    color: var(--gris);
+}
+.menu-mobile img {
+    width: 2.3rem;
+}
+/* aqui empiezan los estilos del hero */
+.hero {
+    padding: 4rem;
+}
+.img-hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-hero-container img {
+    width: 100%;
+}
+.hero .p-container {
+    position: absolute;
+    top: 22rem;
+    left: 5rem;
+}
+.p-container p {
+    font-size: 1.2rem;
+}
+.p-container span {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+@media(max-width: 640px) {
+    .nav-header {
+        display: none;
+    }
+}
+@media(min-width: 640px) {
+    .menu-mobile {
+        display: none;
+    }
+}
