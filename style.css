@@ -22,6 +22,7 @@ body {
 .inactive {
     display: none;
 }
+
 /* aqui empiezan los estilos del header */
 header {
     width: 100%;
@@ -29,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem 0 4rem;
 }
 header a {
     width: 50vw;
@@ -54,6 +55,7 @@ header a {
 .menu-mobile img {
     width: 2.3rem;
 }
+
 /* aqui empiezan los estilos del hero */
 .hero {
     padding: 4rem;
@@ -79,6 +81,8 @@ header a {
     font-weight: bold;
     font-size: 2.2rem;
 }
+
+
 @media(max-width: 640px) {
     .nav-header {
         display: none;
