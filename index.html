@@ -12,12 +12,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
         <header>
-            <a href="/" class="icon-container">
-                <img src="./icons/icon.png" alt="logo">
-            </a>
+            <div class="icon-container">
+                <a href="/" >
+                    <img src="./icons/icon.png" alt="logo">
+                </a>
+            </div>
             <nav class="menu-mobile ">
                 <figure>
                     <img src="./icons/menumobile.png" alt="menu">
@@ -26,23 +30,24 @@
             <nav class="nav-header">
                 <ul class="ul-header">
                     <li>
-                        <a href="/">Home</a>
+                        <a id="a-menu" href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/">Services</a>
+                        <a id="a-menu" href="/">Services</a>
                     </li>
                     <li>
-                        <a href="/">Gallery</a>
+                        <a id="a-menu" href="/">Gallery</a>
                     </li>
                     <li>
-                        <a href="/">About Us</a>
+                        <a id="a-menu" href="/">About Us</a>
                     </li>
                     <li>
-                        <a href="/">Contacs</a>
+                        <a id="a-menu" href="/">Contacs</a>
                     </li>
                 </ul>
             </nav>
         </header>
+
         <main>
             <div class="hero">
                 <div class="img-hero-container">
@@ -61,6 +66,11 @@
                     </figure>
                     <p>Arriendos</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, soluta temporibus! Optio asperiores commodi explicabo accusamus voluptatem suscipit debitis porro!</p>
+                    <div class="plus-container">
+                        <a href="/" class="material-symbols-outlined">
+                            add_circle
+                        </a>
+                    </div>
                 </div>
 
                 <div class="avaluos">
@@ -69,6 +79,11 @@
                     </figure>
                     <p>Tu Casa Nueva...</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, soluta temporibus! Optio asperiores commodi explicabo accusamus voluptatem suscipit debitis porro!</p>
+                    <div class="plus-container">
+                        <a href="/" class="material-symbols-outlined">
+                            add_circle
+                        </a>
+                    </div>
                 </div>
 
                 <div class="avaluos">
@@ -77,6 +92,11 @@
                     </figure>
                     <p>Avaluos</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, soluta temporibus! Optio asperiores commodi explicabo accusamus voluptatem suscipit debitis porro!</p>
+                    <div class="plus-container">
+                        <a href="/" class="material-symbols-outlined">
+                            add_circle
+                        </a>
+                    </div>
                 </div>
 
                 <div class="avaluos">
@@ -85,27 +105,32 @@
                     </figure>
                     <p>Lo Hacemos por Ti...</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, soluta temporibus! Optio asperiores commodi explicabo accusamus voluptatem suscipit debitis porro!</p>
+                    <div class="plus-container">
+                        <a href="/" class="material-symbols-outlined">
+                            add_circle
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="container-testimony">
                 <div class="p">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perferendis nisi aspernatur fugiat cumque ab quod eligendi necessitatibus illum voluptatem pariatur molestias ipsa, numquam eveniet quaerat aliquid maxime? Quos, fuga!
+                        "Como Arquitectos siempre hemos estado interesados en construir en lugares cada vez mas retantes, en diseños nuevos e innovadores, y estamos convencidos que Colombia, con sus montañas y territorios tan llenos de diversidad, seran la geografia perfecta para encontrar las nuevas ideas que estamos buscando."
                     </p>
-                    <p>"Lorem cita"</p>
+                    <p>Ed Oliveros, <br>Fundador y Director</p>
                 </div>
                 <figure>
-                    <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img src="https://images.pexels.com/photos/12850802/pexels-photo-12850802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                 </figure>
             </div>
 
             <div class="about-us">
                 <div class="title">
-
+                    <p>About Us</p>
                 </div>
                 <div class="container-info">
-                    <p></p>
+                    <p>Arch nace con la idea de Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta in cum ex quaerat commodi, debitis atque sed maxime quas asperiores omnis quia quibusdam labore non earum nesciunt eum tenetur recusandae.</p>
                     <span></span>
                 </div>
                 <div class="container-button">
@@ -113,26 +138,18 @@
                 </div>
             </div>
 
-            <div class="img-container">
-                <div>
+            <div class="imagenes-container">
+                <div id="one" class="img-container">
                     <p>01</p>
-                    <p>Titulo</p>
-                    <img src="" alt="">
                 </div>
-                <div>
+                <div id="two" class="img-container">
                     <p>02</p>
-                    <p>Titulo</p>
-                    <img src="" alt="">
                 </div>
-                <div>
+                <div id="three" class="img-container">
                     <p>03</p>
-                    <p>Titulo</p>
-                    <img src="" alt="">
                 </div>
-                <div>
+                <div id="four" class="img-container">
                     <p>04</p>
-                    <p>Titulo</p>
-                    <img src="" alt="">
                 </div>
             </div>
 

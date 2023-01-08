@@ -28,7 +28,7 @@ body {
 /* aqui empiezan los estilos del header */
 header {
     width: 100%;
-    height: 6rem;
+    height: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,8 +38,10 @@ header a {
     width: 50vw;
 }
 .icon-container img {
-    width: 2.5rem;
-    
+    width: 3.5rem; 
+}
+.menu-mobile img {
+    width: 3.5rem;
 }
 .ul-header {
     width: 50vw;
@@ -53,9 +55,7 @@ header a {
 .ul-header li a {
     text-decoration: none;
     color: var(--gris);
-}
-.menu-mobile img {
-    width: 2.3rem;
+    font-size: 1.2rem;
 }
 
 /* aqui empiezan los estilos del hero */
@@ -74,19 +74,21 @@ header a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    
 }
 .img-hero-container span {
     font-weight: bold;
     font-size: 4rem;
     color: var(--grisClaro);
 }
+.menu-mobile:hover {
+    cursor: pointer;
+}
 /* services */
 .services-title {
     width: 100%;
     height: 15rem;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: flex-end;
     margin-bottom: 5rem;
 }
@@ -99,7 +101,8 @@ header a {
     margin: 4rem 0 20rem 0;
 }
 .avaluos {
-    border: 0.1rem var(--grisOscuro) solid;
+    background-color: #2d2d2d;
+    border-radius: 1rem;
     width: 23%;
     height: auto;
     text-align: justify;
@@ -108,13 +111,13 @@ header a {
     padding: 0 1.5rem 1rem 1.5rem;
 }
 .avaluos figure {
-    /* height: 49%; */
     margin-bottom: 1rem;
 }
 .avaluos img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
 }
 .avaluos :nth-child(2) {
     padding: 0 1.5rem 0 1.5rem;
@@ -124,6 +127,27 @@ header a {
 .avaluos :nth-child(3) {
     padding: 0 1.5rem 0 1.5rem;    font-size: 1.2rem;
     margin-bottom: 1rem;
+    color: var(--grisOscuro);
+}
+.plus-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 1rem;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+}
+.plus-container a {
+    text-decoration: none;
+    color: var(--grisOscuro);
+}
+.material-symbols-outlined:hover {
+    cursor: pointer;
 }
 /* testimony */
 .container-testimony {
@@ -133,11 +157,80 @@ header a {
     width: 50%;
     padding-right: 2rem;
 }
+.container-testimony p:nth-child(1) {
+    font-style: oblique;
+    font-size: medium;
+    text-align: end;
+}
+.container-testimony p:nth-child(2) {
+    margin-top: 2rem;
+    font-style: oblique;
+    font-size: small;
+    text-align: end;
+}
 .container-testimony figure {
     width: 50%;
 }
 .container-testimony figure img {
     width: 100%;
+    max-height: 80vh;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* scroll imagenes */
+.imagenes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+.img-container {
+    height: 100%;
+    width: 23%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    color: var(--white);
+}
+.img-container p {
+    width: auto;
+    height: auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.img-container p:hover {
+    color: #000000;
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+.imagenes-container #one {
+    background-image: url(https://images.pexels.com/photos/10419501/pexels-photo-10419501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imagenes-container #two {
+    background-image: url(https://images.pexels.com/photos/4977354/pexels-photo-4977354.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imagenes-container #three {
+    background-image: url(https://images.pexels.com/photos/8482832/pexels-photo-8482832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imagenes-container #four {
+    background-image: url(https://images.pexels.com/photos/7647758/pexels-photo-7647758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 @media(max-width: 850px) {
     .nav-header {
@@ -156,7 +249,7 @@ header a {
         width: 100%;
         height: 100%;
     }
-    .container-testimony {
+    /* .container-testimony {
         flex-direction: column-reverse;
     }
     .container-testimony .p {
@@ -164,10 +257,19 @@ header a {
     }
     .container-testimony figure {
         width: 100%;
+        height: 50%;
     }
+    .container-testimony figure img {
+        height: 50%;
+    } */
 }
 @media(min-width: 851px) {
     .menu-mobile {
+        display: none;
+    }
+}
+@media(max-width: 500px) {
+    .img-container p {
         display: none;
     }
 }
