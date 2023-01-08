@@ -2,7 +2,9 @@
 :root {
     --black: #1b1b1b;
     --white: rgb(255, 255, 255);
+    --grisClaro: #ebebeb;
     --gris: #c7c7c7;
+    --grisOscuro: #606060;
 }
 * {
     margin: 0;
@@ -62,33 +64,109 @@ header a {
 }
 .img-hero-container {
     width: 100%;
+    height: 80vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-image: url(./icons/pexels-btgl-♡-3689642-modified.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
 }
-.img-hero-container img {
+.img-hero-container span {
+    font-weight: bold;
+    font-size: 4rem;
+    color: var(--grisClaro);
+}
+/* services */
+.services-title {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+}
+.services-title p {
+    font-size: 2rem;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0 20rem 0;
+}
+.avaluos {
+    border: 0.1rem var(--grisOscuro) solid;
+    width: 23%;
+    height: auto;
+    text-align: justify;
+}
+.avaluos p {
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+.avaluos figure {
+    /* height: 49%; */
+    margin-bottom: 1rem;
+}
+.avaluos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.avaluos :nth-child(2) {
+    padding: 0 1.5rem 0 1.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.avaluos :nth-child(3) {
+    padding: 0 1.5rem 0 1.5rem;    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+/* testimony */
+.container-testimony {
+    display: flex;
+}
+.container-testimony .p {
+    width: 50%;
+    padding-right: 2rem;
+}
+.container-testimony figure {
+    width: 50%;
+}
+.container-testimony figure img {
     width: 100%;
 }
-.hero .p-container {
-    position: absolute;
-    top: 22rem;
-    left: 5rem;
-}
-.p-container p {
-    font-size: 1.2rem;
-}
-.p-container span {
-    font-weight: bold;
-    font-size: 2.2rem;
-}
-
-
-@media(max-width: 640px) {
+@media(max-width: 850px) {
     .nav-header {
         display: none;
     }
+    .services {
+        flex-direction: column;
+    }
+    .avaluos {
+        width: 100%;
+        height: auto;
+        margin-bottom: 7.5rem;
+        flex-direction: row;
+    }
+    .avaluos img {
+        width: 100%;
+        height: 100%;
+    }
+    .container-testimony {
+        flex-direction: column-reverse;
+    }
+    .container-testimony .p {
+        width: 100%;
+    }
+    .container-testimony figure {
+        width: 100%;
+    }
 }
-@media(min-width: 640px) {
+@media(min-width: 851px) {
     .menu-mobile {
         display: none;
     }
