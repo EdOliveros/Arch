@@ -5,8 +5,75 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+            :root {
+                --black: #1b1b1b;
+                --white: rgb(255, 255, 255);
+                --grisClaro: #ebebeb;
+                --gris: #c7c7c7;
+                --grisOscuro: #606060;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html {
+                font-size: 62.5%;
+                font-family: 'Poppins', sans-serif;
+            }
+            /* regular 400, medium 500, semiblod 600*/
+            body {
+                font-size: 1.2rem;
+                background-color: var(--black);
+                color: var(--gris);
+            }
+            .nav-header-mobile {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                margin-right: 2rem;
+                position: absolute;
+                right: 0;
+            }
+            .nav-header-mobile ul {
+                list-style: none;
+                text-align: end;
+                border: 0.1rem var(--grisOscuro) solid;
+                border-radius: 0 0 0.5rem 0.5rem;
+                padding: 0.5rem 0.5rem 1rem 1rem;
+            }
+            .nav-header-mobile ul li a {
+                text-decoration: none;
+                color: var(--gris);
+                font-size: 1.4rem;
+            }
+        </style>
     </head>
     <body>
-        
+        <nav class="nav-header-mobile">
+            <ul class="ul-header-mobile">
+                <li>
+                    <a id="anchor-menu" href="/">Home</a>
+                </li>
+                <li>
+                    <a id="anchor-menu" href="/">Services</a>
+                </li>
+                <li>
+                    <a id="anchor-menu" href="/">Gallery</a>
+                </li>
+                <li>
+                    <a id="anchor-menu" href="/">About Us</a>
+                </li>
+                <li>
+                    <a id="anchor-menu" href="/">Contacs</a>
+                </li>
+            </ul>
+        </nav>
     </body>
 </html>

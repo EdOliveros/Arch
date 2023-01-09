@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+            :root {
+                --black: #1b1b1b;
+                --white: rgb(255, 255, 255);
+                --grisClaro: #ebebeb;
+                --gris: #c7c7c7;
+                --grisOscuro: #606060;
+                --oscuro: #2b2b2b;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html {
+                font-size: 62.5%;
+                font-family: 'Poppins', sans-serif;
+            }
+            /* regular 400, medium 500, semiblod 600*/
+            body {
+                font-size: 1.2rem;
+                /* background-color: var(--black); */
+                color: var(--gris);
+            }
+            
+            .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+            }
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-bottom: rem;
+                border-bottom: 0.1rem var(--grisOscuro) solid;
+            }
+            .title span {
+                margin-bottom: 0.8rem;
+            }
+            .formulario-container {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                left: 0;
+                margin-left: 4rem;
+            }
+            .container-estilos {
+                width: auto;
+                height: auto;
+                background-color: var(--oscuro);
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 2rem;
+            }
+            .input {
+                margin-bottom: 1rem;
+            }
+            .input input {
+                border-radius: 1rem;
+                border: none;
+                height: 2.3rem;
+                padding: 0.5rem;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="formulario-container">
+            <div class="container-estilos">
+                <div class="title">
+                    <h3>Cuentanos Sobre ti...</h3>
+                    <span class="material-symbols-outlined">
+                        cancel
+                    </span>
+                </div>
+                <div class="input">
+                    <p>Como te llamas?</p>
+                    <input type="text" placeholder="Pepito Perez">
+                </div>
+                <div class="input">
+                    <p>Como te podemos ayudar?</p>
+                    <input type="text" placeholder="me gustaria...">
+                </div>
+                <div class="input">
+                    <p>Cual es tu telefono?</p>
+                    <input type="text" placeholder="9876543">
+                </div>
+                <div class="input">
+                    <p>Cuando te podemos llamar?</p>
+                    <input  type="date" placeholder="">
+                </div>
+            </div>
+       </div>
+    </body>
+</html>

@@ -7,46 +7,103 @@
         <title>Xtrem</title>
 
         <link rel="stylesheet" href="./style.css">
-        <script src="./main.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- icono cerrar -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     </head>
     <body>
         <header>
             <div class="icon-container">
-                <a href="/" >
+                <a class="boton-mobile" href="/" >
                     <img src="./icons/icon.png" alt="logo">
                 </a>
             </div>
-            <nav class="menu-mobile ">
+            <div class="menu-mobile">
                 <figure>
-                    <img src="./icons/menumobile.png" alt="menu">
+                    <img class="menu-mobile" src="./icons/menumobile.png" alt="menu">
                 </figure>
-            </nav>
+            </div>
             <nav class="nav-header">
                 <ul class="ul-header">
                     <li>
-                        <a id="a-menu" href="/">Home</a>
+                        <a id="a-menu" href="./">Home</a>
                     </li>
                     <li>
-                        <a id="a-menu" href="/">Services</a>
+                        <a id="a-menu" href="./pages/services.html">Services</a>
                     </li>
                     <li>
-                        <a id="a-menu" href="/">Gallery</a>
+                        <a id="a-menu" href="./pages/gallery.html">Gallery</a>
                     </li>
                     <li>
-                        <a id="a-menu" href="/">About Us</a>
+                        <a id="a-menu" href="./pages/about.html">About Us</a>
                     </li>
                     <li>
-                        <a id="a-menu" href="/">Contacs</a>
+                        <a id="a-menu" href="./pages/contac.html">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
+
+        <div class="formulario inactive">
+            <div class="formulario-container">
+                <div class="container-estilos">
+                    <div class="title">
+                        <h3>Cuentanos Sobre ti...</h3>
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                    </div>
+                    <div class="input">
+                        <p>Como te llamas?</p>
+                        <input type="text" placeholder="Pepito Perez">
+                    </div>
+                    <div class="input">
+                        <p>Como te podemos ayudar?</p>
+                        <input type="text" placeholder="me gustaria...">
+                    </div>
+                    <div class="input">
+                        <p>Cual es tu telefono?</p>
+                        <input type="text" placeholder="9876543">
+                    </div>
+                    <div class="input">
+                        <p>Cuando te podemos llamar?</p>
+                        <input  type="date" placeholder="">
+                    </div>
+                    <div class="input enviar">
+                        <input  type="submit" placeholder="Enviar">
+                    </div>
+                </div>
+           </div>
+        </div>
+        
+
+        <nav class="nav-header-mobile">
+            <ul class="ul-header-mobile inactive">
+                <li>
+                    <a id="anchor-menu" href="./">Home</a>
+                </li>
+                <li>
+                    <a id="anchor-menu" href="./pages/services.html">Services</a>
+                </li>
+                <li>
+                    <a id="anchor-menu" href="./pages/gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a id="anchor-menu" href="./pages/about.html">About Us</a>
+                </li>
+                <li>
+                    <a id="anchor-menu" href="./pages/contac.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
         <main>
             <div class="hero">
@@ -138,7 +195,7 @@
                 </div>
             </div> -->
 
-            <div class="imagenes-container">
+            <div class="imagenes-container inactive">
                 <div id="one" class="img-container">
                     <p>01</p>
                 </div>
@@ -160,10 +217,14 @@
                 </figure>
                 <p class="llamado-accion">Hagamoslo Juntos!</p>
                 <div class="button-container">
-                    <button>Vamos!</button>
+                    <button class="boton-formulario">Vamos!</button>
                 </div>
             </div>
         </main>
+
+        
+
+
         <footer>
             <div class="info-container">
                 <div>
@@ -233,6 +294,9 @@
             <div class="links-container">
 
             </div>
+
         </footer>
+
+        <script src="./main.js"></script>
     </body>
 </html>
