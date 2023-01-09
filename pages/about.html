@@ -11,6 +11,84 @@
 
         <link rel="stylesheet" href="/style.css">
 
+
+        <style>
+            .about-container {
+                padding: 2rem;
+            }
+            .descripcion-general-container {
+                margin-bottom: 12rem;
+            }
+            .about-container h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20vh;
+                margin-bottom: 2rem;
+            }
+            .about-container .img-container {
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+            .about-container .img-container img {
+                width: 100%;
+            }
+            /* aqui empieza el equipo */
+            .equipo-titulo-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+            .equipo-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .equipo-titulo-container h3 {
+                margin-bottom: 4rem;
+            }
+            .container-individual {
+                width: 27vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 1rem;
+            }
+            .container-individual figure {
+                width: 100%;
+            }
+            .container-individual figure img {
+                width: 100%;
+                border-radius: 1rem;
+            }
+            .descripcion-individual-equipo h4 {
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+            @media (max-width:640px) {
+                .equipo-container {
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .container-individual {
+                    flex-direction: row;
+                    width: 100%;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+                .container-individual figure {
+                    width: 49%;
+                }
+                .descripcion-individual-equipo {
+                    width: 49%;
+                }
+                .descripcion-individual-equipo h4 {
+                    margin-top: 0;
+                }
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -19,14 +97,20 @@
                     <img src="/icons/icon.png" alt="logo">
                 </a>
             </div>
+
+            <div class="menu-mobile">
+                <figure>
+                    <img class="menu-mobile" src="/icons/menumobile.png" alt="menu">
+                </figure>
+            </div>
           
             <nav class="nav-header">
                 <ul class="ul-header">
                     <li>
-                        <a id="a-menu" href="./">Home</a>
+                        <a id="a-menu" href="/index.html">Home</a>
                     </li>
                     <li>
-                        <a id="a-menu" href="./services.html">Services</a>
+                        <a id="a-menu" href="./about.html">Services</a>
                     </li>
                     <li>
                         <a id="a-menu" href="./gallery.html">Gallery</a>
@@ -44,31 +128,149 @@
         <nav class="nav-header-mobile">
             <ul class="ul-header-mobile inactive">
                 <li>
-                    <a id="anchor-menu" href="./">Home</a>
+                    <a id="anchor-menu" href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a id="anchor-menu" href="./pages/services.html">Services</a>
+                    <a id="anchor-menu" href="./services.html">Services</a>
                 </li>
                 <li>
-                    <a id="anchor-menu" href="./pages/gallery.html">Gallery</a>
+                    <a id="anchor-menu" href="./gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a id="anchor-menu" href="./pages/about.html">About Us</a>
+                    <a id="anchor-menu" href="./about.html">About Us</a>
                 </li>
                 <li>
-                    <a id="anchor-menu" href="./pages/contac.html">Contact</a>
+                    <a id="anchor-menu" href="./contac.html">Contact</a>
                 </li>
             </ul>
         </nav>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo doloremque vitae, excepturi dolores saepe cumque voluptatem dicta vel expedita inventore vero fuga blanditiis cum veritatis dolore numquam tempora eveniet id?
-        Nostrum sunt rem praesentium omnis nam, dolorem quod aut at eligendi tempore fugit, dolorum, assumenda aspernatur dicta animi! Iste ab repellendus rem facere corrupti veniam ad dolore est ex inventore?
-        Perspiciatis explicabo excepturi laudantium quos corrupti aspernatur nobis adipisci mollitia ratione ut, distinctio eaque fugiat nulla odio incidunt magnam quibusdam voluptatum veritatis assumenda. Dignissimos adipisci, voluptatum eveniet cupiditate sed sit.
-        Quibusdam, est. Est, harum magni dolores iure quae sunt temporibus placeat. Amet deleniti a dicta libero sed iure ipsum illum dolore odit quia. Est iure pariatur exercitationem aliquam nemo. Provident?
-        Corporis ab, numquam molestiae explicabo, quod odit mollitia quaerat debitis magnam, nostrum voluptatum? Quis obcaecati quaerat illum enim rerum. Ipsa, quo. Reiciendis tempore mollitia fuga vero cupiditate doloribus explicabo culpa.
-        Saepe et aperiam perspiciatis porro sequi illo, quos non quibusdam, harum delectus dolorum soluta. Recusandae impedit in, molestias fugiat eligendi deserunt vero quod voluptate, quae mollitia accusantium, repellendus incidunt possimus.
-        A dolor vel quisquam. Quidem aliquam totam est nulla perferendis aperiam recusandae placeat laboriosam quia itaque, pariatur quibusdam, inventore impedit quam sapiente molestiae nesciunt facilis natus fugit eos omnis. Voluptate.
-        Cumque blanditiis rerum maiores vitae! Veniam ipsum aut corrupti doloribus sapiente maiores ea delectus officiis accusamus blanditiis enim, fugiat necessitatibus, molestias nostrum iusto. Non error nisi saepe inventore officiis quaerat?
-        Voluptatum delectus nulla distinctio sapiente, corporis harum repellendus modi necessitatibus ut ab eaque, voluptates labore facilis cum quas voluptatem doloribus optio? Exercitationem ipsa cum totam iure fuga voluptate hic magni.
-        Placeat nesciunt ab voluptas consequuntur, sapiente numquam sit beatae quidem at architecto pariatur, iure a id voluptate tenetur similique veniam dignissimos. Delectus adipisci veniam saepe. Dolor nobis voluptatem velit doloribus.</p>
+
+        <!-- contenido de esta pagina aqui -->
+
+        <div class="about-container">
+            <div class="descripcion-general-container">
+                <h1>Quienes Somos?</h1>
+                <figure class="img-container">
+                    <img src="https://images.pexels.com/photos/6150381/pexels-photo-6150381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Foto del equipo">
+                </figure>
+                <span>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus facilis aliquam quae eius harum expedita totam magni? Illo magni eius voluptates voluptatibus incidunt neque exercitationem sit, dolor, ipsam quis eum.
+                        Inventore, sequi sit accusamus quas nisi corrupti a unde placeat voluptatum eius delectus vero tempore aliquam ipsum ut? Provident animi assumenda qui doloribus magni rem ut ipsum aliquid accusamus laborum!
+                        Quo, perspiciatis iste nobis voluptatem laboriosam cupiditate distinctio reiciendis doloribus! Omnis, nam quia voluptate ipsam assumenda fuga eum animi quis quam cupiditate natus, quo vitae doloribus laboriosam deserunt pariatur ea.
+                    </P>
+                </span>
+            </div>
+
+            <div class="equipo-titulo-container">
+                <h3>Nuestro equipo!</h3>
+                <div class="equipo-container">
+                    <div class="container-individual">
+                        <figure>
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </figure>
+                        <span class="descripcion-individual-equipo">
+                            <h4>Edward Gonzales</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat repellendus explicabo facere adipisci, quia quae aperiam consectetur cumque molestias laudantium voluptas. Molestias voluptatibus veniam reprehenderit? A voluptatibus accusamus sunt!</p>
+                        </span>
+                    </div>
+                    <div class="container-individual">
+                        <figure>
+                            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </figure>
+                        <span class="descripcion-individual-equipo">
+                            <h4>Edward Gonzales</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat repellendus explicabo facere adipisci, quia quae aperiam consectetur cumque molestias laudantium voluptas. Molestias voluptatibus veniam reprehenderit? A voluptatibus accusamus sunt!
+                            </p>
+                        </span>
+                    </div>
+                    <div class="container-individual">
+                        <figure>
+                            <img src="https://images.pexels.com/photos/50855/pexels-photo-50855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </figure>
+                        <span class="descripcion-individual-equipo">
+                            <h4>Edward Gonzales</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat repellendus explicabo facere adipisci, quia quae aperiam consectetur cumque molestias laudantium voluptas. Molestias voluptatibus veniam reprehenderit? A voluptatibus accusamus sunt!
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="info-container">
+                <div>
+                    <ul id="contenedor-lista">
+                        <li>
+                            <a href="">
+                                <img src="./icons/icon.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Acerca</a>
+                        </li>
+                        <li>
+                            <a href="">Manual de Comunidad</a>
+                        </li>
+                        <li>
+                            <a href="">Privacidad y términos</a>
+                        </li>
+                        <li>
+                            <a href="">Centro de Seguridad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul id="contenedor-lista">
+                        <li>
+                            <a href="">Accesibilidad</a>
+                        </li>
+                        <li>
+                            <a href="">Empleo</a>
+                        </li>
+                        <li>
+                            <a href="">Proyectos Nuevos</a>
+                        </li>
+                        <li>
+                            <a href="">Miembros VIP</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul id="contenedor-lista">
+                        <li>
+                            <a href="">Ciudades</a>
+                        </li>
+                        <li>
+                            <a href="">Publicidad</a>
+                        </li>
+                        <li>
+                            <a href="">Negocios</a>
+                        </li>
+                        <li>
+                            <a href="">Miembros</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul id="contenedor-lista">
+                        <li>
+                            <a href="">¿Preguntas?</a>
+                        </li>
+                        <li>
+                            <a href="">¿Sugerencias?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links-container">
+
+            </div>
+
+        </footer>
+
+        <script src="/main.js"></script>
     </body>
 </html>

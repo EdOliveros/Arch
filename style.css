@@ -316,6 +316,7 @@ footer .info-container {
     height: 25rem;
     padding: 3rem;
     border-top: 0.1rem var(--grisOscuro) solid;
+    margin-top: 20rem;
 }
 footer .info-container img {
     width: 2.5rem;
