@@ -11,6 +11,35 @@
 
         <link rel="stylesheet" href="/style.css">
 
+        <style>
+            .contact-container {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 12rem;
+                margin-top: 3rem;
+            }
+            .partes-container {
+                display: flex;
+                flex-direction: column;
+                width: 50rem
+            }
+            .partes-container p {
+                margin-bottom: 0.5rem;
+            }
+            .partes-container input {
+                margin-bottom: 2rem;
+                outline: none;
+            }
+            .partes-container input:nth-child(6) {
+                height: 15rem;
+
+            }
+            
+        </style>
+
     </head>
     <body>
         <header>
@@ -32,7 +61,7 @@
                         <a id="a-menu" href="/index.html">Home</a>
                     </li>
                     <li>
-                        <a id="a-menu" href="./about.html">Services</a>
+                        <a id="a-menu" href="./services.html">Services</a>
                     </li>
                     <li>
                         <a id="a-menu" href="./gallery.html">Gallery</a>
@@ -67,6 +96,23 @@
             </ul>
         </nav>
 
+        <div class="contact-container">
+            <div class="partes-container">
+                <p>
+                    Nombre *
+                </p>
+                <input type="text" placeholder="Pepito Perez">
+                <p>
+                    Correo *
+                </p>
+                <input type="email" placeholder="pepitoperez@example.com">
+                <p>
+                    Comentario *
+                </p>
+                <input type="text">
+                <input type="submit" placeholder="Enviar">
+            </div>
+        </div>
 
         <footer>
             <div class="info-container">
@@ -74,7 +120,7 @@
                     <ul id="contenedor-lista">
                         <li>
                             <a href="">
-                                <img src="./icons/icon.png" alt="">
+                                <img src="/icons/icon.png" alt="">
                             </a>
                         </li>
                         <li>
